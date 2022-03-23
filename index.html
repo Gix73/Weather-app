@@ -27,17 +27,25 @@
         </header>
 
         <nav id="main-nav" class="sidebar">
-            <a href="/weather">Сегодня</a>
-            <a href="/weather/tomorrow" onclick="route()">Завтра</a>
-            <a href="/weather/7-days" onclick="route()">7 дней</a>
-            <a href="/about" onclick="route()">Справка</a>
+            <div class="main-menu">
+                <a href="/weather/now">Сегодня</a>
+                <a href="/weather/tomorrow" onclick="route()">Завтра</a>
+                <a href="/weather/7-days" onclick="route()">7 дней</a>
+                <a href="/about" onclick="route()">Справка</a>
+            </div>
+            <div class="saved-towns">
+                <div class="town"></div>
+            </div>
+     
         </nav>
 
         <div id="main-page" class="main-page">
 
         </div>
-    </div>
+        <footer class="footer">
 
+        </footer>
+    </div>
 
     <script src="./js/router.js"></script>
 </body>

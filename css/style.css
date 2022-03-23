@@ -6,7 +6,13 @@
 
 html {
   background-color: rgba(3, 42, 250, 0.17);
+  height: 100%;
 }
+body {
+  position: relative;
+  min-height: 100%;
+}
+/* //////////////// header /////////////// */
 .header {
   grid-area: h;
   background: linear-gradient(
@@ -15,12 +21,6 @@ html {
     aqua 30%,
     rgb(7, 104, 255) 40%
   );
-  /* background: linear-gradient(
-    to right,
-    #0cc1fe 20%,
-    cyan 30%,
-    rgb(255, 255, 7) 50%
-  ); */
 }
 .header-container {
   position: relative;
@@ -55,26 +55,58 @@ html {
   border-bottom: 1px solid #fff;
   background-color: transparent;
 }
+/* //////////////// header /////////////// */
+
+/* //////////////// root /////////////// */
 .root {
   max-width: 1920px;
   width: 100%;
+  height: 100vh;
   display: grid;
   grid-template-areas:
     "h h"
-    "n c";
-  grid-template-rows: 100px 1fr;
+    "n c"
+    "f f";
+  grid-template-rows: 100px 1fr 100px;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
   margin: 0 auto;
 }
+/* //////////////// root /////////////// */
+
+/* //////////////// nav /////////////// */
 .sidebar {
   grid-area: n;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   background-color: chartreuse;
+  height: 100%;
 }
 .main-page {
   grid-area: c;
   background-color: yellow;
 }
+.main-menu {
+  display: flex;
+  flex-direction: column;
+}
+.saved-towns {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+/* //////////////// nav /////////////// */
+
+/* //////////////// footer /////////////// */
+.footer {
+  grid-area: f;
+  max-width: 1920px;
+  width: 100%;
+  height: 100px;
+}
+/* //////////////// footer /////////////// */
