@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
+
 <body>
-    <div class="root"> 
+
+    <div class="root">
+
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./src/header/logo.webp" alt="logo">
+                </div>
+                <div class="logo-text">Weather forecast</div>
+            </div>
+        </header>
+
         <nav id="main-nav" class="sidebar">
-            <a href="/"></a>
-            <a href="/for-a-day" onclick="route()">Прогноз погоды на день</a>
-            <a href="/for-a-week" onclick="route()">Прогноз погоды на неделю</a>
+            <a href="/weather">Сегодня</a>
+            <a href="/weather/tomorrow" onclick="route()">Завтра</a>
+            <a href="/weather/7-days" onclick="route()">7 дней</a>
             <a href="/about" onclick="route()">Справка</a>
         </nav>
-        <div id="main-page" class="main-page"></div>
+
+        <div id="main-page" class="main-page">
+
+        </div>
     </div>
+
 
     <script src="./js/router.js"></script>
 </body>
+
 </html>
