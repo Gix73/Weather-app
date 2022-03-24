@@ -96,6 +96,7 @@ a {
   font-weight: 300;
   font-size: 18px;
   line-height: 27px;
+  color: #fff;
 
   /* identical to box height */
   letter-spacing: 0.3px;
@@ -117,7 +118,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #fff;
 }
 .setting-span {
   font-size: 20px;

@@ -19,6 +19,6 @@
   "bugs": {
     "url": "https://github.com/Gix73/Weather-app/issues"
   },
-  "homepage": "https://github.com/Gix73/Weather-app#readme",
+  "homepage": "/weather/now",
   "lint": "eslint --ignore-path .gitignore ."
 }
