@@ -15,12 +15,12 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr; /*1fr;*/
   grid-template-areas:
     "c"
     "f"
-    "w"
-    "r";
+    "w";
+  /* "r"; */
   gap: 20px;
   justify-content: center;
   background-color: #d4dbfe;
@@ -104,7 +104,7 @@ body {
 .date {
   font-weight: 600;
   font-size: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 45px;
 }
 .day-forecast {
   display: flex;
@@ -132,10 +132,57 @@ body {
   filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
     brightness(119%) contrast(119%);
 }
+.forecast-wind {
+  font-size: 20px;
+  font-weight: 600;
+}
 /* //////////////// forecast /////////////// */
-.wind {
+
+/* //////////////// week-forecast /////////////// */
+.week-forecast {
   grid-area: w;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 30px 25px;
+  border-radius: 34px;
+  background-color: #fff;
+  justify-content: space-evenly;
 }
-.rainfall {
+.week-sky {
+  font-weight: 600;
+  font-size: 30px;
+  color: #a098ae;
+}
+.day-of-the-week {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.day-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.week-img {
+  width: 30px;
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg)
+    brightness(119%) contrast(119%);
+}
+.name-of-the-day {
+  font-size: 25px;
+  font-weight: 600;
+}
+.weather-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* //////////////// week-forecast /////////////// */
+/* .rainfall {
   grid-area: r;
-}
+} */
