@@ -115,6 +115,10 @@ body {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+.dayf-wrapper {
+  display: flex;
+  gap: 21px;
+}
 .forecast-container {
   display: flex;
   flex-direction: column;
@@ -193,6 +197,7 @@ body {
 @media screen and (max-width: 768px) {
   .content-wrapper {
     justify-content: unset;
+    padding: 0 10px;
   }
   /* //////////////// current-weather /////////////// */
   .current-weather {
@@ -206,6 +211,14 @@ body {
   /* //////////////// forecast /////////////// */
   .forecast {
     width: 100%;
+  }
+  .day-forecast {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .dayf-wrapper {
+    padding-bottom: 20px;
   }
 
   /* //////////////// forecast /////////////// */
