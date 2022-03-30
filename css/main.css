@@ -90,6 +90,10 @@ body {
 .icon {
   width: 30px;
 }
+.icon-container {
+  display: flex;
+  align-items: center;
+}
 /* //////////////// current-weather /////////////// */
 /* //////////////// forecast /////////////// */
 .forecast {
@@ -186,3 +190,26 @@ body {
 /* .rainfall {
   grid-area: r;
 } */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    justify-content: unset;
+  }
+  /* //////////////// current-weather /////////////// */
+  .current-weather {
+    width: 100%;
+  }
+  .details span {
+    font-size: 20px;
+  }
+  /* //////////////// current-weather /////////////// */
+
+  /* //////////////// forecast /////////////// */
+  .forecast {
+    width: 100%;
+  }
+
+  /* //////////////// forecast /////////////// */
+  .week-forecast {
+    width: 100%;
+  }
+}

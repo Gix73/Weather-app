@@ -20,7 +20,7 @@
         <header class="header">
             <div class="header-container">
                 <div class="logo">
-                    <img src="./src/header/logo.webp" alt="logo">
+                    <img src="./src/header/logo.svg" alt="logo">
                 </div>
                 <div class="logo-text">Weather forecast</div>
                 <input type="text" class="city" value="Minsk">
@@ -29,9 +29,9 @@
 
         <nav id="main-nav" class="sidebar">
             <div class="main-menu">
-                <a href="/">Сегодня</a>
+                <a href="/" onclick="route()">Сегодня</a>
                 <a href="/weather/tomorrow" onclick="route()">Завтра</a>
-                <a href="/weather/7-days" onclick="route()">Неделя</a>
+                <a href="/weather/saved-towns" onclick="route()">Мои города</a>
             </div>
             <div class="saved-towns">
                 <span>Сохранённые города</span>

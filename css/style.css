@@ -22,13 +22,13 @@ a {
 /* //////////////// header /////////////// */
 .header {
   grid-area: h;
-  /* background: linear-gradient(90deg, #3c6fd1 0%, #3c6fd1 0.01%, #7ca9ff 100%); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     #0cc1fe 20%,
     aqua 30%,
     rgb(7, 104, 255) 40%
-  );
+  ); */
+  background: linear-gradient(180deg, #3c6fd1 0%, #3c6fd1 0.01%, #7ca9ff 100%);
 }
 .header-container {
   position: relative;
@@ -41,6 +41,8 @@ a {
   width: 100%;
 }
 .logo {
+  display: flex;
+  align-items: center;
   position: relative;
   width: 100px;
   height: 100px;
@@ -215,3 +217,35 @@ input:checked + .slider:before {
   height: 100px;
 }
 /* //////////////// footer /////////////// */
+@media screen and (max-width: 768px) {
+  .root {
+    grid-template-areas:
+      "h h"
+      "c c"
+      "f f";
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    margin: 0 auto;
+  }
+  .sidebar {
+    display: none;
+  }
+  .logo-text {
+    font-size: 30px;
+  }
+  /* .current-weather {
+    width: 100%;
+  }
+  .forecast {
+    width: 100%;
+  }
+  .week-forecast {
+    width: 100%;
+  } */
+}
+@media screen and (max-width: 655px) {
+  .logo-text {
+    font-size: 30px;
+  }
+}
