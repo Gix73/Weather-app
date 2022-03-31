@@ -9,7 +9,7 @@ const routes = {
     404: "/pages/404.htm",
     "/": "/pages/main.html",
     "/for-a-day": "/pages/weather.html",
-    "/for-a-week": "/pages/week-weather.html",
+    "/weather/saved-towns": "/pages/saved-towns.html",
     "/about": "/pages/about.html"
 }
 
