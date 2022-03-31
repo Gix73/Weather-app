@@ -7,7 +7,7 @@
 html {
   height: 100%;
   font-family: "Roboto", sans-serif;
-  min-width: 375px;
+  min-width: 345px;
 }
 
 body {
@@ -347,3 +347,13 @@ body {
 
   /* //////////////// week-forecast /////////////// */
 }
+@media screen and (max-width: 376px){
+  .popup-menu{
+    width: 30px;
+    height: 30px;
+  }
+  .find-btn{
+    width: 30px;
+    height: 30px;
+  }
+ }
