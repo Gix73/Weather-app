@@ -7,6 +7,7 @@
 html {
   height: 100%;
   font-family: "Roboto", sans-serif;
+  min-width: 375px;
 }
 
 body {
@@ -187,6 +188,13 @@ body {
   color: #a098ae;
 }
 
+.weekf-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .day-of-the-week {
   display: flex;
   justify-content: space-between;
@@ -270,11 +278,11 @@ body {
   .rain-chance {
     font-size: 14px;
   }
- 
+
   .sky-description {
     font-size: 24px;
   }
- 
+
   .location {
     font-size: 14px;
     font-weight: 600;
@@ -282,6 +290,10 @@ body {
 
   .pointer {
     width: 27px;
+  }
+
+  .details span:nth-child(2){
+    font-size: 14px;
   }
 
   /* //////////////// current-weather /////////////// */
@@ -299,6 +311,7 @@ body {
     line-height: 24px;
     padding-bottom: 23px;
   }
+
   .forecast-container {
     gap: 8px;
   }
@@ -307,24 +320,30 @@ body {
     font-size: 12px;
     font-weight: 400;
   }
-  .forecast-container{
+
+  .forecast-container {
     font-size: 14px;
   }
-  .forecast-wind{
+
+  .forecast-wind {
     font-size: 14px;
   }
 
   /* //////////////// forecast /////////////// */
 
   /* //////////////// week-forecast /////////////// */
-  .week-forecast{
+  .week-forecast {
     justify-content: flex-start;
   }
-  .day-of-the-week span{
+
+  .day-of-the-week span {
     font-size: 14px;
+    font-weight: 400;
   }
-  .weather-wrapper{
+
+  .weather-wrapper {
     gap: 10px;
   }
+
   /* //////////////// week-forecast /////////////// */
 }
